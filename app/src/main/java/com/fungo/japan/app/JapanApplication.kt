@@ -1,6 +1,8 @@
 package com.fungo.japan.app
 
 import com.fungo.baselib.app.BaseApplication
+import com.fungo.imagego.glide.GlideImageStrategy
+import com.fungo.imagego.strategy.ImageGoEngine
 
 /**
  * @author Pinger
@@ -9,6 +11,7 @@ import com.fungo.baselib.app.BaseApplication
 class JapanApplication : BaseApplication() {
 
     override fun initSDK() {
+        ImageGoEngine.setImageStrategy(GlideImageStrategy())
     }
 
 
