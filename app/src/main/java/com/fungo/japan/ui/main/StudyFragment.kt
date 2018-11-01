@@ -17,4 +17,5 @@ class StudyFragment : BasePageFragment() {
 
     override fun initPageView() {
     }
+
 }

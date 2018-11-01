@@ -27,6 +27,10 @@ class FindFragment : BasePageFragment() {
         return R.layout.fragment_find
     }
 
+
+    override fun isShowToolBar(): Boolean = false
+
+
     override fun initData() {
         // 翻译接口，翻译今天的日期
 
