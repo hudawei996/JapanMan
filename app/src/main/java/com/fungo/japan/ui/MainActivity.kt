@@ -32,14 +32,14 @@ class MainActivity(override val layoutResID: Int = R.layout.activity_main) : Bas
                 fragments[2],
                 fragments[3])
 
-        navigationView.setOnNavigationItemSelectedListener {
+        navigation.setOnNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.bottom_study -> showHideFragment(fragments[0])
                 R.id.bottom_find -> showHideFragment(fragments[1])
                 R.id.bottom_source -> showHideFragment(fragments[2])
                 R.id.bottom_user -> showHideFragment(fragments[3])
             }
-            return@setOnNavigationItemSelectedListener true
+            true
         }
     }
 }

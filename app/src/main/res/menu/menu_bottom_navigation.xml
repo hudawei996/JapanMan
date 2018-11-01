@@ -4,30 +4,26 @@
 
     <item
         android:id="@+id/bottom_study"
-        android:icon="@android:drawable/ic_menu_week"
-        android:title="@string/bottom_study"
-        app:showAsAction="ifRoom" />
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/bottom_study"/>
 
 
     <item
         android:id="@+id/bottom_find"
-        android:icon="@android:drawable/ic_menu_search"
-        android:title="@string/bottom_find"
-        app:showAsAction="ifRoom" />
+        android:icon="@drawable/ic_explore_black_24dp"
+        android:title="@string/bottom_find" />
 
 
     <item
         android:id="@+id/bottom_source"
-        android:icon="@android:drawable/ic_menu_share"
-        android:title="@string/bottom_source"
-        app:showAsAction="always" />
+        android:icon="@drawable/ic_public_black_24dp"
+        android:title="@string/bottom_source"/>
 
 
     <item
         android:id="@+id/bottom_user"
-        android:icon="@android:drawable/ic_menu_add"
-        android:title="@string/bottom_user"
-        app:showAsAction="always" />
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/bottom_user"/>
 
 
 </menu>
