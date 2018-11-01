@@ -17,7 +17,7 @@ class MainActivity(override val layoutResID: Int = R.layout.activity_main) : Bas
     override fun initView() {
 
         val fragments = arrayListOf<BaseFragment>()
-        fragments.add(StudyFragment())
+//        fragments.add(StudyFragment())
 //        fragments.add(FindFragment())
 //        fragments.add(SourceFragment())
 //        fragments.add(UserFragment())
@@ -26,10 +26,10 @@ class MainActivity(override val layoutResID: Int = R.layout.activity_main) : Bas
 
         navigationView.setOnNavigationItemSelectedListener {
             when (it.itemId) {
-                R.id.bottom_study -> viewPager.setCurrentItem(0,false)
-//                R.id.bottom_find -> viewPager.currentItem = 1
-//                R.id.bottom_source -> viewPager.currentItem = 2
-//                R.id.bottom_user -> viewPager.currentItem = 3
+                R.id.bottom_study -> viewPager.currentItem = 0
+                R.id.bottom_find -> viewPager.currentItem = 1
+                R.id.bottom_source -> viewPager.currentItem = 2
+                R.id.bottom_user -> viewPager.currentItem = 3
             }
             return@setOnNavigationItemSelectedListener true
         }

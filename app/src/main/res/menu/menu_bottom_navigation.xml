@@ -5,29 +5,29 @@
     <item
         android:id="@+id/bottom_study"
         android:icon="@android:drawable/ic_menu_week"
-        android:title="@string/app_name"
+        android:title="@string/bottom_study"
         app:showAsAction="ifRoom" />
 
 
-    <!--<item-->
-        <!--android:id="@+id/bottom_find"-->
-        <!--android:icon="@android:drawable/ic_menu_search"-->
-        <!--android:title="@string/app_name"-->
-        <!--app:showAsAction="ifRoom" />-->
+    <item
+        android:id="@+id/bottom_find"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/bottom_find"
+        app:showAsAction="ifRoom" />
 
 
-    <!--<item-->
-        <!--android:id="@+id/bottom_source"-->
-        <!--android:icon="@android:drawable/ic_menu_share"-->
-        <!--android:title="@string/app_name"-->
-        <!--app:showAsAction="always" />-->
+    <item
+        android:id="@+id/bottom_source"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="@string/bottom_source"
+        app:showAsAction="always" />
 
 
-    <!--<item-->
-        <!--android:id="@+id/bottom_user"-->
-        <!--android:icon="@android:drawable/ic_menu_add"-->
-        <!--android:title="@string/app_name"-->
-        <!--app:showAsAction="always" />-->
+    <item
+        android:id="@+id/bottom_user"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/bottom_user"
+        app:showAsAction="always" />
 
 
 </menu>
