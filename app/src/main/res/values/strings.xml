@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">日语君</string>
-    <string name="bottom_study">学习</string>
+
     <string name="bottom_find">发现</string>
     <string name="bottom_source">资源</string>
     <string name="bottom_user">我的</string>
+    <string name="bottom_home">主页</string>
+
+    <string name="main_day_by_day_jp">每日一句日语</string>
 </resources>

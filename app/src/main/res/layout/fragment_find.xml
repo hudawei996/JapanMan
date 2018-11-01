@@ -4,23 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.MainActivity">
-
-    <ImageView
-        android:id="@+id/blurView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#3f000000"
-        android:scaleType="centerCrop" />
+    android:background="@color/grey_f2"
+    tools:context=".ui.main.MainActivity">
 
     <com.fungo.banner.BannerView
         android:id="@+id/bannerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="12dp"
         app:bannerAutoLoop="false"
-        app:bannerPageMode="normal"
+        app:bannerFarMargin="0dp"
+        app:bannerPageAlpha="0.8"
+        app:bannerPageMode="far"
+        app:bannerPagePadding="@dimen/dp_24"
+        app:bannerPageScale="0.8"
         app:bannerSlideAnim="false"
         app:indicatorVisible="false" />
 

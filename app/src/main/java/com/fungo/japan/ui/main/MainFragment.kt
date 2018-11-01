@@ -1,25 +1,30 @@
-package com.fungo.japan.ui
+package com.fungo.japan.ui.main
 
-import com.fungo.baselib.base.basic.BaseActivity
 import com.fungo.baselib.base.basic.BaseFragment
+import com.fungo.baselib.base.page.BasePageFragment
 import com.fungo.japan.R
 import com.fungo.japan.ui.find.FindFragment
-import com.fungo.japan.ui.main.StudyFragment
 import com.fungo.japan.ui.source.SourceFragment
+import com.fungo.japan.ui.home.HomeFragment
 import com.fungo.japan.ui.user.UserFragment
-import kotlinx.android.synthetic.main.activity_main.*
-
+import kotlinx.android.synthetic.main.fragment_main.*
 
 /**
- * 第一个Activity，主要用来分发页面
- * 暂时用来做主页，后面会分成多个Fragment
+ * @author Pinger
+ * @since 2018/11/1 21:53
  */
-class MainActivity(override val layoutResID: Int = R.layout.activity_main) : BaseActivity() {
+class MainFragment : BasePageFragment() {
+
+    override fun getPageLayoutResId(): Int = R.layout.fragment_main
+
+    override fun isShowToolBar(): Boolean = false
+
+    override fun isSwipeBackEnable(): Boolean = false
 
 
-    override fun initView() {
+    override fun initPageView() {
         val fragments = arrayListOf<BaseFragment>()
-        fragments.add(StudyFragment())
+        fragments.add(HomeFragment())
         fragments.add(FindFragment())
         fragments.add(SourceFragment())
         fragments.add(UserFragment())

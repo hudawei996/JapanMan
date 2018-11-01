@@ -1,4 +1,4 @@
-package com.fungo.japan.ui.user
+package com.fungo.japan.ui.home
 
 import android.app.Activity
 import com.fungo.baselib.base.page.BasePageFragment
@@ -7,21 +7,28 @@ import com.fungo.japan.R
 
 /**
  * @author Pinger
- * @since 2018/10/31 21:14
+ * @since 2018/10/31 21:21
  *
- * 用户中心页面，用户用于登陆，查看自我信息等
+ * 第一页Fragment页面，学习日语页面
  *
  */
-class UserFragment : BasePageFragment() {
+class HomeFragment : BasePageFragment() {
 
-    override fun isShowToolBar(): Boolean = false
+    override fun getPageTitle(): String? = "我是主页面"
+
+    override fun isShowBackIcon(): Boolean = false
 
     override fun getPageLayoutResId(): Int {
-        return R.layout.fragment_user
+        return R.layout.fragment_home
     }
+
+    override fun initPageView() {
+    }
+
 
     override fun onSupportVisible() {
         super.onSupportVisible()
         StatusBarUtils.setStatusBarForegroundColor(context as Activity, false)
     }
+
 }

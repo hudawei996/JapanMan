@@ -16,7 +16,7 @@ class JapanApplication : BaseApplication() {
 
 
     override fun getCurrentEnvModel(): Int {
-        return 0
+            return 3
     }
 
 

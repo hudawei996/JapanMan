@@ -5,7 +5,7 @@
     <item
         android:id="@+id/bottom_study"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/bottom_study"/>
+        android:title="@string/bottom_home"/>
 
 
     <item
