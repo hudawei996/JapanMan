@@ -29,5 +29,5 @@ dependencies {
     implementation 'com.github.PingerOne:Fungo:1.1.4'
     implementation 'com.github.PingerOne:NetGO:1.0.0'
     implementation 'com.github.PingerOne.ImageGo:imagego_glide:2.0.4'
-    implementation 'com.github.PingerOne:BannerView:1.0.6'
+    implementation 'com.github.PingerOne:bannerview:1.0.7'
 }
