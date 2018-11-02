@@ -6,7 +6,7 @@ import com.fungo.baselib.base.page.BaseFragmentPageAdapter
 import com.fungo.baselib.base.page.BasePageFragment
 import com.fungo.baselib.utils.StatusBarUtils
 import com.fungo.japan.R
-import com.fungo.japan.test.TestFragment
+import com.fungo.japan.ui.source.comic.ComicFragment
 import kotlinx.android.synthetic.main.fragment_source.*
 
 /**
@@ -38,10 +38,10 @@ class SourceFragment : BasePageFragment() {
                 "资料"
         )
         val fragments = arrayListOf<BaseFragment>(
-                TestFragment(),
-                TestFragment(),
-                TestFragment(),
-                TestFragment()
+                ComicFragment(),
+                ComicFragment(),
+                ComicFragment(),
+                ComicFragment()
         )
 
         val adapter = BaseFragmentPageAdapter(childFragmentManager)
