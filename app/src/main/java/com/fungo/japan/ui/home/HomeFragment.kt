@@ -14,9 +14,7 @@ import com.fungo.japan.R
  */
 class HomeFragment : BasePageFragment() {
 
-    override fun getPageTitle(): String? = "我是主页面"
-
-    override fun isShowBackIcon(): Boolean = false
+    override fun isShowToolBar(): Boolean = false
 
     override fun getPageLayoutResId(): Int {
         return R.layout.fragment_home

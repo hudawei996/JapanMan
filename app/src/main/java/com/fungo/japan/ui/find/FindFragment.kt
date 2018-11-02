@@ -36,6 +36,13 @@ class FindFragment : BasePageFragment() {
 
     override fun initData() {
 
+
+//        https@ //fanyi.baidu.com/transapi?from=auto&to=jp&query=%E5%8F%AF%E7%88%B1
+
+
+
+
+
         // 翻译接口，翻译今天的日期
         // 数据接口读取今日推荐
         mBannerView.setPages(DataProvider.provideCardData(10), object : BannerHolderCreator<FindCardBean, FindCardHolder> {
