@@ -2,9 +2,9 @@ package com.fungo.japan.ui.find.detail
 
 import android.app.Activity
 import android.os.Bundle
-import com.fungo.baselib.base.page.BasePageFragment
-import com.fungo.baselib.theme.UiUtils
-import com.fungo.baselib.utils.StatusBarUtils
+import com.fungo.baseuilib.fragment.BaseSwipeBackFragment
+import com.fungo.baseuilib.theme.UiUtils
+import com.fungo.baseuilib.utils.StatusBarUtils
 import com.fungo.imagego.loadImage
 import com.fungo.japan.R
 import com.fungo.japan.ui.find.FindCardBean
@@ -17,7 +17,9 @@ import me.yokeyword.fragmentation.anim.FragmentAnimator
  * @author Pinger
  * @since 2018/11/1 21:43
  */
-class FindDetailFragment : BasePageFragment() {
+class FindDetailFragment : BaseSwipeBackFragment() {
+
+    override fun isShowToolBar(): Boolean = false
 
     private var mFindCardBean: FindCardBean? = null
     private val mAppBarHeight by lazy {
@@ -27,8 +29,6 @@ class FindDetailFragment : BasePageFragment() {
     private val mToolBarHeight by lazy {
         toolBar.measuredHeight
     }
-
-    override fun isShowToolBar(): Boolean = false
 
     companion object {
         @JvmStatic
@@ -54,11 +54,9 @@ class FindDetailFragment : BasePageFragment() {
         mFindCardBean = arguments?.get("CARDBEAN") as FindCardBean?
     }
 
-    override fun getPageLayoutResId(): Int {
-        return R.layout.fragment_find_detail
-    }
+    override fun getContentResID(): Int = R.layout.fragment_find_detail
 
-    override fun initPageView() {
+    override fun initContentView() {
         toolBar.navigationIcon = UiUtils.getBackIconFont(context!!)
         toolBar.setNavigationOnClickListener {
             onBackClick()

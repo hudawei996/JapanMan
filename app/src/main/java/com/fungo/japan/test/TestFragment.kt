@@ -1,6 +1,6 @@
 package com.fungo.japan.test
 
-import com.fungo.baselib.base.basic.BaseFragment
+import com.fungo.baseuilib.fragment.BaseFragment
 import com.fungo.japan.R
 
 /**
@@ -9,8 +9,5 @@ import com.fungo.japan.R
  */
 class TestFragment : BaseFragment() {
 
-    override val layoutResID: Int
-        get() = R.layout.fragment_test
-
-    override fun isSwipeBackEnable(): Boolean  = false
+    override fun getLayoutResID(): Int = R.layout.fragment_test
 }

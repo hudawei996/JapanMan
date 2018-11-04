@@ -1,10 +1,10 @@
 package com.fungo.japan.ui.source
 
 import android.app.Activity
-import com.fungo.baselib.base.basic.BaseFragment
-import com.fungo.baselib.base.page.BaseFragmentPageAdapter
-import com.fungo.baselib.base.page.BasePageFragment
-import com.fungo.baselib.utils.StatusBarUtils
+import com.fungo.baselib.adapter.BaseFragmentPageAdapter
+import com.fungo.baseuilib.fragment.BaseContentFragment
+import com.fungo.baseuilib.fragment.BaseFragment
+import com.fungo.baseuilib.utils.StatusBarUtils
 import com.fungo.japan.R
 import com.fungo.japan.ui.source.comic.ComicFragment
 import kotlinx.android.synthetic.main.fragment_source.*
@@ -15,21 +15,16 @@ import kotlinx.android.synthetic.main.fragment_source.*
  * 资源页面，包括日语动画，图片，书籍等资源
  * 或者学习资料等
  */
-class SourceFragment : BasePageFragment() {
+class SourceFragment : BaseContentFragment() {
 
-
-    override fun isShowToolBar(): Boolean = false
-
-    override fun getPageLayoutResId(): Int {
-        return R.layout.fragment_source
-    }
+    override fun getContentResID(): Int = R.layout.fragment_source
 
     override fun onSupportVisible() {
         super.onSupportVisible()
         StatusBarUtils.setStatusBarForegroundColor(context as Activity, false)
     }
 
-    override fun initPageView() {
+    override fun initContentView() {
         StatusBarUtils.setStatusBarHeight(statusView)
         val titles = arrayListOf(
                 "动漫",

@@ -1,6 +1,6 @@
 package com.fungo.japan.ui.source.comic
 
-import com.fungo.baselib.base.recycler.BaseRecyclerContract
+import com.fungo.baseuilib.recycler.BaseRecyclerContract
 
 /**
  * @author Pinger

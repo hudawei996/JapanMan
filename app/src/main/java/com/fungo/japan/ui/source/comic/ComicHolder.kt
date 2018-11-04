@@ -1,8 +1,8 @@
 package com.fungo.japan.ui.source.comic
 
 import android.view.ViewGroup
-import com.fungo.baselib.base.recycler.BaseViewHolder
-import com.fungo.baselib.base.recycler.multitype.MultiTypeViewHolder
+import com.fungo.baseuilib.recycler.BaseViewHolder
+import com.fungo.baseuilib.recycler.multitype.MultiTypeViewHolder
 import com.fungo.japan.R
 
 /**
@@ -11,16 +11,12 @@ import com.fungo.japan.R
  */
 class ComicHolder : MultiTypeViewHolder<ComicBean, ComicHolder.ViewHolder>() {
 
-    override fun onCreateViewHolder(p0: ViewGroup): ViewHolder {
-        return ViewHolder(p0)
-    }
-
+    override fun onCreateViewHolder(p0: ViewGroup): ViewHolder = ViewHolder(p0)
 
     class ViewHolder(parent: ViewGroup) : BaseViewHolder<ComicBean>(parent, R.layout.holder_comic) {
         override fun onBindData(data: ComicBean) {
             setText(R.id.textView, data.title)
         }
-
     }
 
 }

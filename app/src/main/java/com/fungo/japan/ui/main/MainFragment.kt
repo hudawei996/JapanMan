@@ -1,11 +1,11 @@
 package com.fungo.japan.ui.main
 
-import com.fungo.baselib.base.basic.BaseFragment
-import com.fungo.baselib.base.page.BasePageFragment
+import com.fungo.baseuilib.fragment.BaseContentFragment
+import com.fungo.baseuilib.fragment.BaseFragment
 import com.fungo.japan.R
 import com.fungo.japan.ui.find.FindFragment
-import com.fungo.japan.ui.source.SourceFragment
 import com.fungo.japan.ui.home.HomeFragment
+import com.fungo.japan.ui.source.SourceFragment
 import com.fungo.japan.ui.user.UserFragment
 import kotlinx.android.synthetic.main.fragment_main.*
 
@@ -13,16 +13,11 @@ import kotlinx.android.synthetic.main.fragment_main.*
  * @author Pinger
  * @since 2018/11/1 21:53
  */
-class MainFragment : BasePageFragment() {
+class MainFragment : BaseContentFragment() {
 
-    override fun getPageLayoutResId(): Int = R.layout.fragment_main
+    override fun getContentResID(): Int = R.layout.fragment_main
 
-    override fun isShowToolBar(): Boolean = false
-
-    override fun isSwipeBackEnable(): Boolean = false
-
-
-    override fun initPageView() {
+    override fun initContentView() {
         val fragments = arrayListOf<BaseFragment>()
         fragments.add(HomeFragment())
         fragments.add(FindFragment())

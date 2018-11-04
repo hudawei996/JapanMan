@@ -1,16 +1,15 @@
 package com.fungo.japan.ui.main
 
-import com.fungo.baselib.base.page.BasePageActivity
-import com.fungo.baselib.base.page.BasePageFragment
+import com.fungo.baseuilib.activity.BaseContentActivity
+import com.fungo.baseuilib.fragment.BaseFragment
 
 
 /**
  * 第一个Activity，主要用来分发页面
  * 暂时用来做主页，后面会分成多个Fragment
  */
-class MainActivity : BasePageActivity() {
+class MainActivity : BaseContentActivity() {
 
-    override fun getPageFragment(): BasePageFragment = MainFragment()
+    override fun getContentFragment(): BaseFragment = MainFragment()
 
-    override fun isSwipeBackEnable(): Boolean = false
 }

@@ -7,7 +7,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import com.fungo.banner.holder.BaseBannerHolder
-import com.fungo.baselib.base.basic.BaseActivity
+import com.fungo.baseuilib.activity.BaseActivity
 import com.fungo.imagego.loadImage
 import com.fungo.japan.R
 import com.fungo.japan.ui.find.detail.FindDetailFragment

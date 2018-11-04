@@ -1,8 +1,8 @@
 package com.fungo.japan.ui.home
 
 import android.app.Activity
-import com.fungo.baselib.base.page.BasePageFragment
-import com.fungo.baselib.utils.StatusBarUtils
+import com.fungo.baseuilib.fragment.BaseContentFragment
+import com.fungo.baseuilib.utils.StatusBarUtils
 import com.fungo.japan.R
 
 /**
@@ -12,17 +12,9 @@ import com.fungo.japan.R
  * 第一页Fragment页面，学习日语页面
  *
  */
-class HomeFragment : BasePageFragment() {
+class HomeFragment : BaseContentFragment() {
 
-    override fun isShowToolBar(): Boolean = false
-
-    override fun getPageLayoutResId(): Int {
-        return R.layout.fragment_home
-    }
-
-    override fun initPageView() {
-    }
-
+    override fun getContentResID(): Int = R.layout.fragment_home
 
     override fun onSupportVisible() {
         super.onSupportVisible()

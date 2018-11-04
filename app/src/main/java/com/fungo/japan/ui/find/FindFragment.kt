@@ -3,8 +3,8 @@ package com.fungo.japan.ui.find
 import android.app.Activity
 import com.fungo.banner.BannerView
 import com.fungo.banner.holder.BannerHolderCreator
-import com.fungo.baselib.base.page.BasePageFragment
-import com.fungo.baselib.utils.StatusBarUtils
+import com.fungo.baseuilib.fragment.BaseContentFragment
+import com.fungo.baseuilib.utils.StatusBarUtils
 import com.fungo.japan.R
 import com.fungo.japan.data.DataProvider
 import me.yokeyword.fragmentation.anim.DefaultNoAnimator
@@ -17,31 +17,20 @@ import me.yokeyword.fragmentation.anim.FragmentAnimator
  * 每日一句日语的发现页面
  *
  */
-class FindFragment : BasePageFragment() {
+class FindFragment : BaseContentFragment() {
 
     private val mBannerView by lazy {
         findView<BannerView<FindCardBean>>(R.id.bannerView)
     }
 
-    override fun getPageLayoutResId(): Int {
-        return R.layout.fragment_find
-    }
+    override fun getContentResID(): Int = R.layout.fragment_find
 
-    override fun isShowToolBar(): Boolean = false
-
-    override fun initPageView() {
+    override fun initContentView() {
         showPageLoading()
     }
 
-
     override fun initData() {
-
-
 //        https@ //fanyi.baidu.com/transapi?from=auto&to=jp&query=%E5%8F%AF%E7%88%B1
-
-
-
-
 
         // 翻译接口，翻译今天的日期
         // 数据接口读取今日推荐

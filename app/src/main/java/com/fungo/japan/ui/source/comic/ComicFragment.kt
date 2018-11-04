@@ -1,7 +1,7 @@
 package com.fungo.japan.ui.source.comic
 
-import com.fungo.baselib.base.recycler.BaseRecyclerContract
-import com.fungo.baselib.base.recycler.BaseRecyclerFragment
+import com.fungo.baseuilib.recycler.BaseRecyclerContract
+import com.fungo.baseuilib.recycler.BaseRecyclerFragment
 
 /**
  * @author Pinger
@@ -9,18 +9,11 @@ import com.fungo.baselib.base.recycler.BaseRecyclerFragment
  */
 class ComicFragment : BaseRecyclerFragment() {
 
-
     override fun isShowToolBar(): Boolean = false
 
-    override fun isSwipeBackEnable(): Boolean = false
+    override fun getPresenter(): BaseRecyclerContract.Presenter = ComicPresenter(this)
 
-
-    override fun getPresenter(): BaseRecyclerContract.Presenter {
-        return ComicPresenter(this)
-    }
-
-
-    override fun initRecyView() {
+    override fun initPageView() {
         register(ComicBean::class.java, ComicHolder())
     }
 }
